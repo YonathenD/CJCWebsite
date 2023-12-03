@@ -12,6 +12,31 @@ body {
     top: 12%;
 }
 
+/* Header */
+.header_area .main-menu .navbar .navbar-brand {
+    padding: 0 0rem 0 2rem;
+    font-family: "Questrial", sans-serif;
+    font-size: 2rem;
+    color: #4EABCC;
+  }
+  
+  .header_area .main-menu .navbar {
+    padding-left: 0rem;
+    padding-right: 2rem;
+  }
+  
+  .header_area .main-menu .nav-item .nav-link {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color: #4EABCC;
+  }
+  
+  .header_area .main-menu .navbar-nav a:hover {
+    color: rgb(211, 211, 211);
+  }
+
 /* Home Page */
 #homeScreen {
     position: absolute;
