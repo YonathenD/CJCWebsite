@@ -37,6 +37,10 @@ body {
     color: rgb(211, 211, 211);
   }
 
+  .navbar-toggler[aria-expanded="true"] {
+    color: #4EABCC!important;
+  }
+
 /* Home Page */
 #homeScreen {
     position: absolute;
