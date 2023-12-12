@@ -3,6 +3,10 @@ body {
     overflow: hidden;
 }
 
+h2 {
+    color: #4EABCC;
+}
+
 /* Logo Animation */
 #logoVideo {
     position: absolute;
@@ -62,6 +66,7 @@ body {
     border-radius: 20px;
     margin: 10px auto;
     box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    margin-top: 100px;
 }
 
 .column {
