@@ -27,6 +27,7 @@ h2 {
   .header_area .main-menu .navbar {
     padding-left: 0rem;
     padding-right: 2rem;
+    min-width: 100vw;
   }
   
   .header_area .main-menu .nav-item .nav-link {
@@ -75,7 +76,7 @@ h2 {
     background: #fff;
     max-width: 360px;
     border-radius: 20px;
-    margin: 60px auto;
+    margin: auto;
     box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
 }
 
