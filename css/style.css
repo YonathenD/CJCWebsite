@@ -56,6 +56,17 @@ h2 {
     background-color: #FAFAFA;
 }
 
+#landing {
+    width: 100vw; 
+    height:100vh; 
+    max-height: 625px; 
+    background-image: linear-gradient(black, transparent), linear-gradient(0deg, #FAFAFA, #FAFAFA 10%, transparent 90%, transparent), url(/media/images/Welcome.jpg); 
+    background-repeat: no-repeat; 
+    background-position-x: center;
+    background-position-y: center;
+    animation: changeBackground 10s infinite;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -181,3 +192,37 @@ h2 {
 .hidden {
     display: none;
 }
+
+@keyframes changeBackground {
+    0% {
+        background-image: linear-gradient(black, transparent), linear-gradient(0deg, #FAFAFA, #FAFAFA 10%, transparent 90%, transparent), url(/media/images/Welcome.jpg); 
+        background-repeat: no-repeat; 
+        background-position-x: center;
+        background-position-y: center;
+    }
+    25% {
+        background-image: linear-gradient(black, transparent), linear-gradient(0deg, #FAFAFA, #FAFAFA 10%, transparent 90%, transparent), url(/media/images/NewYears.jpg); 
+        background-repeat: no-repeat; 
+        background-position-x: center;
+        background-position-y: center;
+    }
+    50% {
+        background-image: linear-gradient(black, transparent), linear-gradient(0deg, #FAFAFA, #FAFAFA 10%, transparent 90%, transparent), url(/media/images/NewYears2.jpg); 
+        background-repeat: no-repeat; 
+        background-position-x: center;
+        background-position-y: center;
+        height: auto 50%;
+    }
+    75% {
+        background-image: linear-gradient(black, transparent), linear-gradient(0deg, #FAFAFA, #FAFAFA 10%, transparent 90%, transparent), url(/media/images/ChristmasWorship.jpg); 
+        background-repeat: no-repeat; 
+        background-position-x: center;
+        background-position-y: center;
+    }
+    100% {
+        background-image: linear-gradient(black, transparent), linear-gradient(0deg, #FAFAFA, #FAFAFA 10%, transparent 90%, transparent), url(/media/images/Kids.jpg); 
+        background-repeat: no-repeat; 
+        background-position-x: center;
+        background-position-y: center;
+    }
+  }
