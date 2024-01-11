@@ -74,7 +74,7 @@
         <div style="overflow: hidden;">
         <div id="landing">
             <h1 style="color: #FAFAFA; font-family: Garamond, serif; font-size: 300%; display: inline; position: relative; top: 25%;">
-                Welcome to <em style="color: #4EABCC;">Church of Jesus Christ</em>
+              | Welcome to <em style="color: #4EABCC;">Church of Jesus Christ</em>
             </h1>
         </div>
         </div>
@@ -107,12 +107,48 @@
               <h2 style="text-align: left; margin: auto 3.5%;">| Ways to Give</h2>
           </header>
           <div class="container" style="max-width: 73%; margin: 50px auto;"><em style="font-family: Garamond, serif; color: #4EABCC;">"So let each one give as he purposes in his heart, not grudgingly or of necessity; for God loves a cheerful giver." - II Corinthians 9:7</em></div>
-          <div class="container" style="max-width: 93%; margin: 10px auto; align-items: center; flex-direction: column;">
-              <div class="column" style="margin: 10px; min-width: 93%;">Cashapp</div>
-              <div class="column" style="margin: 10px; min-width: 93%">Zelle</div>
+          <div class="row">
+            <div class="row-md-4">
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select Donation Type
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#" data-value="Tithe">Tithe</a>
+                  <a class="dropdown-item" href="#" data-value="Kingdom Commitment">Kingdom Commitment</a>
+                  <a class="dropdown-item" href="#" data-value="Gift/Other">Gift/Other</a>
+                  <!-- Add more options as needed -->
+                </div>
+                <script>
+                  // Add event listener to the dropdown menu
+                  document.querySelectorAll('.dropdown-item').forEach(item => {
+                    item.addEventListener('click', function() {
+                      // Get the value of the clicked option
+                      const selectedOption = this.getAttribute('data-value');
+
+                      // Update the text content of the dropdown button
+                      document.getElementById('dropdownMenuButton').innerText = selectedOption;
+                    });
+                  });
+                </script>
+              </div>
+            </div>
+        
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="name">Enter Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+              </div>
+            </div>
+        
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" class="form-control" id="amount" placeholder="Enter Amount">
+              </div>
+            </div>
           </div>
-          <div class="container" style="max-width: 93%; margin: 10px auto;">Bank Wire</div>
-          <div class="container" style="max-width: 93%; margin: 10px auto;">Possibly use subsplash instead since it is a safer platform for giving.</div>
+          
         </div>
 
         <div id="footer" style="background-color: #4EABCC; margin-top: 100px;">
@@ -152,12 +188,14 @@
         </div>
     </div>
     <script src="/js/main.js"></script>
-    <!-- Bootstrap Bundle with Popper -->
+    <!-- Bootstrap JS dependencies -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
