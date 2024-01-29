@@ -9,3 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
         homeScreen.style.display = "block";
     });
 });
+
+const images = document.getElementsByClassName('ukiyo');
+new Ukiyo(images);
