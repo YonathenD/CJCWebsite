@@ -7,10 +7,10 @@
 
     <title>CJC | Church of Jesus Christ</title>
 
-    <link rel="icon" type="image/x-icon" href="/media/images/CJCLogo.jpg">
+    <link rel="icon" type="image/x-icon" href="/media/images/CJCLogo.jpg" />
 
     <!-- aos css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -93,14 +93,14 @@
         <br>
         
         <div id="about" style="padding-top: 20px; padding-bottom: 20px;">
-          <div class="container">
+          <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <div class="column" style="box-shadow: none; border-color: #FAFAFA;">
               <!-- Content for the first column -->
               <h1>| About CJC</h1>
               <img src="./media/images/About.png" style="max-width: 100%;" alt="About Image">
               <p>"Rehoboth - 5th Year Anniversary Celebration"</p>
             </div>
-            <div class="column">
+            <div class="column" data-aos="fade-left" data-aos-duration="1000">
               <!-- Content for the second column -->
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
@@ -255,6 +255,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+      $(function(){
+        $('.hidden').scroll(function(){
+          AOS.refresh();
+        });
+      });
     </script>
   </body>
 </html>
