@@ -103,7 +103,7 @@ h1 {
 }
 
 /* Media Icons */
-#footer {
+.footer {
       ul {
         display: flex;
         position: relative;
