@@ -103,20 +103,20 @@ h1 {
 }
 
 /* Media Icons */
-.footer {
-      ul {
+
+      .footer ul {
         display: flex;
         position: relative;
         scale: 50%;
         transform: translate(-50%,-90%);
       }
       
-      ul li {
+      .footer ul li {
         list-style: none;
         padding: 5px;
       }
       
-      ul li a {
+      .footer ul li a {
         width: 80px;
         height: 80px;
         background-color: #fff;
@@ -132,19 +132,19 @@ h1 {
         z-index: 1;
       }
       
-      ul li a .icon {
+      .footer ul li a .icon {
         position: relative;
         color: #4EABCC;
         transition: .5s;
         z-index: 3;
       }
       
-      ul li a:hover .icon {
+      .footer ul li a:hover .icon {
         color: #fff;
         transform: rotateY(360deg);
       }
       
-      ul li a:before {
+      .footer ul li a:before {
         content: "";
         position: absolute;
         top: 100%;
@@ -156,30 +156,30 @@ h1 {
         z-index: 2;
       }
       
-      ul li a:hover:before {
+      .footer ul li a:hover:before {
         top: 0;
       }
       
-      ul li:nth-child(1) a:before{
+      .footer ul li:nth-child(1) a:before{
         background: #3b5999;
       }
       
-      ul li:nth-child(2) a:before{
+      .footer ul li:nth-child(2) a:before{
         background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
       }
       
-      ul li:nth-child(3) a:before {
+      .footer ul li:nth-child(3) a:before {
         background: linear-gradient(45deg, #FF6FA5, #000000, #69C9D0);
       }
       
-      ul li:nth-child(4) a:before {
+      .footer ul li:nth-child(4) a:before {
         background: #25D366;
       }
 
-      ul li:nth-child(5) a:before {
+      .footer ul li:nth-child(5) a:before {
         background: #55acee;
       }
-}
+
 
 @media (max-width: 600px) {
     .container {
